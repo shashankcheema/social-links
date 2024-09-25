@@ -3,41 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Links</title>
+    <title>Connect with Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* Professional font */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
         }
+
+        /* Background image for Government of Andhra Pradesh logo */
+        body::before {
+            content: '';
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Andhra_Pradesh_Logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.1; /* To make the logo subtle */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        /* Center container with overlay */
         .container {
-            padding: 20px;
-            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            max-width: 380px;
+            width: 90%;
+            margin: auto;
+            position: relative;
+            z-index: 2;
         }
-        a {
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            color: #f0f0f0;
+            font-weight: 700;
+        }
+
+        /* Social media link styles */
+        .social-link {
+            background-color: rgba(255, 255, 255, 0.05);
+            margin: 12px 0;
+            padding: 15px 25px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             text-decoration: none;
-            display: inline-block;
-            margin: 15px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #008CBA;
-            color: white;
-            font-size: 18px;
+            color: #fff;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
         }
-        a:hover {
-            background-color: #005f73;
+
+        /* Space between icon and text */
+        .social-link i {
+            margin-right: 25px; /* Adjusted margin for clearer separation */
+            font-size: 24px;
+        }
+
+        /* Hover and focus effects for interactivity */
+        .social-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-link:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.5);
+            outline-offset: 4px;
+        }
+
+        .social-link span {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive adjustments for larger screens */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .social-link span {
+                font-size: 20px;
+            }
+
+            .social-link i {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Connect with Me on Social Media</h1>
-        <a href="https://www.instagram.com/collectormanyam/" target="_blank">Instagram</a>
-        <a href="https://x.com/collectormanyam" target="_blank">Twitter</a>
-        <a href="https://www.facebook.com/collectormanyam" target="_blank">Facebook</a>
-        <a href="https://whatsapp.com/channel/0029VaogNXAFXUuhzbvqbs0e" target="_blank">WhatsApp</a>
+        <h1>Connect with Me</h1>
+        <a class="social-link" href="https://www.instagram.com/your_username" target="_blank">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        <a class="social-link" href="https://twitter.com/your_username" target="_blank">
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+        </a>
+        <a class="social-link" href="https://www.facebook.com/your_username" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            <span>Facebook</span>
+        </a>
+        <a class="social-link" href="https://wa.me/your_whatsapp_number" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
     </div>
+
+    <!-- FontAwesome script for social media icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>

@@ -5,127 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect with Me</title>
     <style>
-        /* Professional font */
+        /* General reset and font styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Helvetica Neue', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #1A1A2E;
             color: #fff;
-            text-align: center;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-            background-color: #1F3A93; /* Added a solid background color */
+            flex-direction: column;
+            min-height: 100vh;
         }
 
-        /* Center container with overlay */
+        /* Header styles */
+        header {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 80px; /* Adjusted for mobile */
+            transition: transform 0.3s ease;
+        }
+
+        header h2 {
+            margin: 0;
+            color: #1A1A2E;
+            font-size: 22px; /* Adjusted for mobile */
+            font-weight: 700;
+            margin-left: 10px;
+        }
+
+        header:hover img {
+            transform: scale(1.1); /* Interactive logo hover effect */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centered for mobile */
+            padding: 15px;
+            margin-top: auto;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer img {
+            width: 150px; /* Adjusted for mobile */
+        }
+
+        /* Container styles */
         .container {
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            max-width: 380px;
+            background-color: #1F4068;
+            padding: 30px; /* Reduced padding for mobile */
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
             width: 90%;
-            margin: auto;
-            position: relative;
+            margin: 20px auto;
+            text-align: center;
+            border: 1px solid #E0E0E0;
         }
 
         h1 {
-            font-size: 28px;
+            font-size: 28px; /* Adjusted for mobile */
             margin-bottom: 20px;
-            letter-spacing: 1px;
             color: #f0f0f0;
-            font-weight: 700;
+            font-weight: 800;
         }
 
         /* Social media link styles */
         .social-link {
-            background-color: rgba(255, 255, 255, 0.05);
-            margin: 12px 0;
-            padding: 15px 25px;
-            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 10px 0;
+            padding: 15px 20px; /* Adjusted padding */
+            border-radius: 12px;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             transition: background-color 0.3s ease, transform 0.2s ease;
             text-decoration: none;
             color: #fff;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Set all social media icons to the same size */
+        /* Social media icon styles */
         .social-link img {
-            margin-right: 20px;
-            width: 30px;
-            height: 30px;
-            object-fit: contain;
+            margin-right: 15px; /* Adjusted for spacing */
+            width: 35px; /* Smaller icons */
+            height: 35px;
+            filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
         }
 
-        /* Enlarged size specifically for Twitter X logo */
-        .twitter-x-logo {
-            width: 40px; /* Increased width for larger size */
-            height: 40px;
-        }
-
-        /* Hover and focus effects for interactivity */
+        /* Hover effects for social links */
         .social-link:hover {
-            background-color: rgba(255, 255, 255, 0.15);
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-8px);
         }
 
-        .social-link:focus {
-            outline: 2px solid rgba(255, 255, 255, 0.5);
-            outline-offset: 4px;
+        .social-link:hover img {
+            transform: scale(1.1);
         }
 
         .social-link span {
-            font-size: 18px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
+            font-size: 18px; /* Adjusted for mobile */
+            font-weight: 600;
+            color: #E0E0E0;
         }
 
-        /* Responsive adjustments for larger screens */
+        /* Responsive adjustments */
         @media (min-width: 768px) {
+            header img {
+                width: 120px;
+            }
+
+            header h2 {
+                font-size: 26px;
+            }
+
+            footer img {
+                width: 180px;
+            }
+
             h1 {
-                font-size: 32px;
+                font-size: 36px;
             }
 
             .social-link span {
-                font-size: 20px;
+                font-size: 22px;
+            }
+
+            .social-link img {
+                width: 45px;
+                height: 45px;
+            }
+
+            .container {
+                padding: 50px;
             }
         }
     </style>
 </head>
 <body>
+
+    <!-- Header with Government of Andhra Pradesh Logo -->
+    <header>
+        <img src="https://seeklogo.com/images/A/andhra-pradesh-state-new-emblem-logo-ECDF9406BD-seeklogo.com.png" alt="Government of Andhra Pradesh Logo">
+        <h2>Government of Andhra Pradesh</h2>
+    </header>
+
+    <!-- Main Content -->
     <div class="container">
         <h1>Connect with Me</h1>
         
-        <!-- Instagram link with custom icon -->
+        <!-- Instagram -->
         <a class="social-link" href="https://www.instagram.com/your_username" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
             <span>Instagram</span>
         </a>
 
-        <!-- Updated Twitter icon from Flaticon -->
+        <!-- Twitter (X) -->
         <a class="social-link" href="https://twitter.com/your_username" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="Twitter X" class="twitter-x-logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="Twitter X">
             <span>Twitter (X)</span>
         </a>
 
-        <!-- Facebook link with custom icon -->
+        <!-- Facebook -->
         <a class="social-link" href="https://www.facebook.com/your_username" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
             <span>Facebook</span>
         </a>
 
-        <!-- WhatsApp link with custom icon -->
+        <!-- WhatsApp -->
         <a class="social-link" href="https://wa.me/your_whatsapp_number" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
             <span>WhatsApp</span>
         </a>
     </div>
+
+    <!-- Footer with Vibzar Logo -->
+    <footer>
+        <img src="https://static.wixstatic.com/media/225001_6feae4c14c524ff89b0a571e39cb60fa~mv2.png/v1/fill/w_944,h_254,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Vibzar%20logo_edited.png" alt="Vibzar Logo">
+    </footer>
+
 </body>
 </html>

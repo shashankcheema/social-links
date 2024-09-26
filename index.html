@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect with Me</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Professional font */
         body {
@@ -18,22 +17,7 @@
             align-items: center;
             height: 100vh;
             position: relative;
-        }
-
-        /* Background image for Government of Andhra Pradesh logo */
-        body::before {
-            content: '';
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Andhra_Pradesh_Logo.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            opacity: 0.1; /* To make the logo subtle */
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1;
+            background-color: #1F3A93; /* Added a solid background color */
         }
 
         /* Center container with overlay */
@@ -46,7 +30,6 @@
             width: 90%;
             margin: auto;
             position: relative;
-            z-index: 2;
         }
 
         h1 {
@@ -72,10 +55,11 @@
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Space between icon and text */
-        .social-link i {
-            margin-right: 25px; /* Adjusted margin for clearer separation */
-            font-size: 24px;
+        /* Social media icon size and margin */
+        .social-link img {
+            margin-right: 20px;
+            width: 30px; /* Adjust icon size */
+            height: auto;
         }
 
         /* Hover and focus effects for interactivity */
@@ -105,35 +89,36 @@
             .social-link span {
                 font-size: 20px;
             }
-
-            .social-link i {
-                font-size: 28px;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Connect with Me</h1>
+        
+        <!-- Instagram link with custom icon -->
         <a class="social-link" href="https://www.instagram.com/your_username" target="_blank">
-            <i class="fab fa-instagram"></i>
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
             <span>Instagram</span>
         </a>
+
+        <!-- Twitter link with custom icon -->
         <a class="social-link" href="https://twitter.com/your_username" target="_blank">
-            <i class="fab fa-twitter"></i>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
             <span>Twitter</span>
         </a>
+
+        <!-- Facebook link with custom icon -->
         <a class="social-link" href="https://www.facebook.com/your_username" target="_blank">
-            <i class="fab fa-facebook-f"></i>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
             <span>Facebook</span>
         </a>
+
+        <!-- WhatsApp link with custom icon -->
         <a class="social-link" href="https://wa.me/your_whatsapp_number" target="_blank">
-            <i class="fab fa-whatsapp"></i>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
             <span>WhatsApp</span>
         </a>
     </div>
-
-    <!-- FontAwesome script for social media icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>

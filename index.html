@@ -55,11 +55,18 @@
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Social media icon size and margin */
+        /* Set all social media icons to the same size */
         .social-link img {
             margin-right: 20px;
-            width: 30px; /* Adjust icon size */
-            height: auto;
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        /* Enlarged size specifically for Twitter X logo */
+        .twitter-x-logo {
+            width: 40px; /* Increased width for larger size */
+            height: 40px;
         }
 
         /* Hover and focus effects for interactivity */
@@ -102,10 +109,10 @@
             <span>Instagram</span>
         </a>
 
-        <!-- Twitter link with custom icon -->
+        <!-- Updated Twitter icon from Flaticon -->
         <a class="social-link" href="https://twitter.com/your_username" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-            <span>Twitter</span>
+            <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="Twitter X" class="twitter-x-logo">
+            <span>Twitter (X)</span>
         </a>
 
         <!-- Facebook link with custom icon -->

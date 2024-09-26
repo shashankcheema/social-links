@@ -10,8 +10,8 @@
             font-family: 'Helvetica Neue', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #1A1A2E;
-            color: #fff;
+            background-color: #f7f7f7; /* Light off-white background */
+            color: #333333; /* Dark grey text for readability */
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -19,13 +19,13 @@
 
         /* Header styles */
         header {
-            background-color: #fff;
+            background-color: #e0e0e0; /* Light grey header */
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 15px 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            flex-wrap: wrap;  /* Ensures wrapping on mobile screens */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+            flex-wrap: wrap;
         }
 
         header img {
@@ -35,7 +35,7 @@
 
         header h2 {
             margin: 0;
-            color: #1A1A2E;
+            color: #333333; /* Dark grey text */
             font-family: 'Georgia', serif;
             font-size: 22px;
             font-weight: bold;
@@ -46,13 +46,13 @@
 
         /* Footer styles */
         footer {
-            background-color: #fff;
+            background-color: #f7f7f7; /* Same light background as body */
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 15px;
             margin-top: auto;
-            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
         }
 
         footer img {
@@ -61,27 +61,27 @@
 
         /* Container styles */
         .container {
-            background-color: #1F4068;
-            padding: 20px;  /* Reduced padding for mobile */
+            background-color: #ffffff; /* White background for content */
+            padding: 30px;  /* Adjusted padding */
             border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            max-width: 100%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            max-width: 700px;
             width: 90%;
             margin: 20px auto;
             text-align: center;
-            border: 1px solid #E0E0E0;
+            border: 1px solid #e0e0e0; /* Light border for contrast */
         }
 
         h1 {
             font-size: 28px;
             margin-bottom: 20px;
-            color: #f0f0f0;
+            color: #333333;
             font-weight: 800;
         }
 
         /* Social media link styles */
         .social-link {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: #f0f0f0; /* Light grey background for links */
             margin: 10px 0;
             padding: 15px 20px;
             border-radius: 12px;
@@ -90,8 +90,8 @@
             justify-content: center;
             transition: background-color 0.3s ease, transform 0.2s ease;
             text-decoration: none;
-            color: #fff;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            color: #333333;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05); /* Light shadow */
         }
 
         /* Social media icon styles */
@@ -99,24 +99,24 @@
             margin-right: 15px;
             width: 35px;
             height: 35px;
-            filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.1)); /* Softer shadow */
             transition: transform 0.3s ease;
         }
 
         /* Hover effects for social links */
         .social-link:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            transform: translateY(-8px);
+            background-color: #e0e0e0;
+            transform: translateY(-5px);
         }
 
         .social-link:hover img {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .social-link span {
             font-size: 18px;
             font-weight: 600;
-            color: #E0E0E0;
+            color: #333333;
         }
 
         /* Responsive adjustments */
@@ -148,7 +148,6 @@
 
             .container {
                 padding: 50px;
-                max-width: 700px;
             }
         }
     </style>
